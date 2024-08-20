@@ -15,17 +15,7 @@ SPARKLE_FEED_URL could be overridden to the above if you wish to fetch beta vers
     <dict>
 		<key>curl_opts</key>
 		<array>
-			<string>accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,/;q=0.8,application/signed-exchange;v=b3;q=0.7</string>
-			<string>accept-language: en-US,en;q=0.9</string>
-			<string>cache-control: no-cache</string>
-			<string>pragma: no-cache</string>
-			<string>priority: u=0, i</string>
-			<string>sec-fetch-dest: document</string>
-			<string>>sec-fetch-mode: navigate</string>
-			<string>sec-fetch-site: none</string>
-			<string>sec-fetch-user: ?1</string>
-			<string>upgrade-insecure-requests: 1</string>
-			<string>>user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36</string>
+			<string>>-H user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36</string>
 		</array>
         <key>NAME</key>
         <string>REDCINE-XPRO</string>
