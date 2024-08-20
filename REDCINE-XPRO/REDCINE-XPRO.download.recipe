@@ -15,7 +15,7 @@ SPARKLE_FEED_URL could be overridden to the above if you wish to fetch beta vers
     <dict>
 	<key>curl_opts</key>
 	<array>
-		<string>-A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"</string>
+		<string>-H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36'</string>
 	</array>
 	<key>CHECK_FILESIZE_ONLY</key>
 	<string>TRUE</string>
