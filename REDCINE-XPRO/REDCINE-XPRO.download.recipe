@@ -13,12 +13,6 @@ SPARKLE_FEED_URL could be overridden to the above if you wish to fetch beta vers
     <string>com.github.timsutton.download.redcine-xpro</string>
     <key>Input</key>
     <dict>
-	<key>curl_opts</key>
-	<array>
-		<string>-H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36'</string>
-	</array>
-	<key>CHECK_FILESIZE_ONLY</key>
-	<string>TRUE</string>
         <key>NAME</key>
         <string>REDCINE-XPRO</string>
         <key>SPARKLE_FEED_URL</key>
@@ -38,8 +32,28 @@ SPARKLE_FEED_URL could be overridden to the above if you wish to fetch beta vers
             </dict>
         </dict>
         <dict>
+        	<key>Processor</key>
+        	<string>StringReplacer</string>
+        	<key>Arguments</key>
+        	<dict>
+				<key>input_string</key>
+				<string>%url%</string>
+				<key>string_to_replace</key>
+        		<string>http://</string>
+        		<key>string_to_replace</key>
+        		<string>http://</string>
+        		<key>replacement_string</key>
+        		<string>https://</string>
+        	</dict>
+        </dict>
+        <dict>
             <key>Processor</key>
             <string>URLDownloader</string>
+            <key>Arguments</key>
+            <dict>
+            	<key>url</key>
+            	<string>%output_string%</string>
+            </dict>
         </dict>
         <dict>
             <key>Processor</key>
