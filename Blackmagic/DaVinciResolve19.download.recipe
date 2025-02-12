@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Downloads latest version of DaVinci Resolve 18.
+    <string>Downloads latest version of DaVinci Resolve 19.
 
 This product requires registration in order to download, so
 you _must_ override all input variables beginning with 'REG_'
