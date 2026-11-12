@@ -14,9 +14,18 @@
         <string>https://figure53.com/qlab/downloads/appcast-v3.xml</string>
     </dict>
     <key>MinimumVersion</key>
-    <string>0.3.1</string>
+    <string>1.1</string>
     <key>Process</key>
     <array>
+        <dict>
+            <key>Processor</key>
+            <string>DeprecationWarning</string>
+            <key>Arguments</key>
+            <dict>
+                <key>warning_message</key>
+                <string>QLab 3 is no longer available for download. Consider switching to the QLab 4 or QLab 5 recipes in the dataJAR-recipes repo. This recipe is deprecated and will be removed in the future.</string>
+            </dict>
+        </dict>
         <dict>
             <key>Processor</key>
             <string>SparkleUpdateInfoProvider</string>
